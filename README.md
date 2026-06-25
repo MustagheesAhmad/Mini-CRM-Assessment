@@ -197,7 +197,7 @@ GET /api/leads?status=new&assigned_to=2&per_page=20&page=1
 | Capability | Administrator | Standard User |
 |---|---|---|
 | View all leads | ✅ | ❌ (assigned only) |
-| Create leads | ✅ | ❌ |
+| Create leads | ✅ | ✅ |
 | Update leads | ✅ | ✅ (assigned only) |
 | Delete leads | ✅ | ❌ |
 | Assign leads | ✅ | ❌ |
@@ -221,7 +221,7 @@ The frontend is a React + TypeScript SPA served by Laravel — no separate Node 
 
 There's also a **Dashboard** at `/dashboard` with live stats (total, new, contacted, converted leads).
 
-Role-aware UI: the "New Lead" and "Delete" buttons only appear for admin users. Authorization is always enforced on the backend — the UI just reflects permissions.
+Role-aware UI: the "Delete" button only appears for admin users. The "New Lead" button is visible to all authenticated users. Authorization is always enforced on the backend — the UI just reflects permissions.
 
 ---
 

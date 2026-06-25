@@ -80,15 +80,13 @@ export default function LeadsIndex() {
                 title="Leads"
                 subtitle={`${pagination.total} total leads`}
                 actions={
-                    isAdmin ? (
-                        <Button
-                            variant="contained"
-                            startIcon={<AddIcon />}
-                            {...{ component: Link, href: '/leads/create' } as object}
-                        >
-                            New Lead
-                        </Button>
-                    ) : undefined
+                    <Button
+                        variant="contained"
+                        startIcon={<AddIcon />}
+                        {...{ component: Link, href: '/leads/create' } as object}
+                    >
+                        New Lead
+                    </Button>
                 }
             />
 
